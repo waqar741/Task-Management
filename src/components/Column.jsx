@@ -52,8 +52,8 @@ function Column({ colIndex }) {
       onDragOver={handleOnDragOver}
       className="scrollbar-hide   mx-5 pt-[90px] min-w-[280px] "
     >
-      <div className=" font-semibold flex  items-center  gap-2 tracking-widest md:tracking-[.2em] text-[#828fa3]">
-        <div className={`rounded-full w-4 h-4 ${color} `} />
+      <div className=" font-semibold flex  items-center  gap-2 tracking-widest md:tracking-[.2em] text-[#828fa3] uppercase relative group  transition-all duration-300 hover:text-[#635FC7] cursor-default">
+        <div className={`rounded-full w-4 h-4 ${color} transition-all duration-300 group-hover:scale-125 shadow-sm `} />
         {col.name} ({col.tasks.length})
       </div>
 
